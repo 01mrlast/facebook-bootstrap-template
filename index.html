@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blue Theme</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimal-ui" /><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'><link rel="stylesheet" href="./style.css">
+
+    <style type="text/css">
+
+
+.story {
+    background:white;
+    padding:10px 5px;
+}
+.story .story-item {
+    height: 160px;
+    border-radius: 15px;
+    background: #3e7fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    position:relative;
+    font-size:13px; 
+}  
+.story .story-item:before {
+   content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: .2;
+    border-radius: 15px;
+  } 
+.story .story-item span {
+    position:absolute;bottom:0;
+    padding:10px 5px; 
+  font-family: sans-serif;
+}
+.story .owl-stage {
+    right: 15px;
+}
+
+.rounded {
+  background-image:url(https://any.ge/assets/images/favicon-32x32.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width:32px;
+  height:32px;
+  margin:5px;
+  position:absolute;
+  border-radius:50%;
+ border:2px solid #3877e1;
+}
+.f-card {
+  background-color:white;
+  /*height:400px;*/
+  width:502px;
+  border: 1px solid #d0d1d5;
+  border-radius:3px;
+  margin: auto;
+  margin-bottom:10px;
+  padding: 12px; 
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, .30); /* Not original, just a test */
+}
+
+.header {
+  margin-bottom:17px;
+}
+
+.co-logo {
+  /*display:block;*/
+  float:left;
+  margin-right:8px;
+  
+  width:40px;
+  height:40px;
+}
+
+.co-name > a {
+  font-family: Helvetica;
+  font-size:14px;
+  font-weight: bold;
+  line-height: 1.38;
+  color: #365899;
+  text-decoration:none;
+  
+  margin-bottom:2px;
+}
+
+.co-name > a:hover {
+  text-decoration:underline;
+}
+
+.time {
+  font-family: Helvetica;
+  font-size:12px;
+  color: #90949c;
+}
+
+.time > a {
+  color: #90949c;
+  text-decoration:none;
+}
+
+.time > a:hover {
+  text-decoration:underline;
+}
+
+.options {
+  font-family: Helvetica;
+  font-size:12px;
+  color: #e5e5e5;
+  float:right;
+}
+
+.options:hover {
+  color: black; /* Fallback */
+  color: rgba(0, 0, 0, .30);
+}
+
+.content {
+  clear:both;
+  font-family: Helvetica, sans-serif;
+  font-size:14px;
+  line-height: 1.38;
+}
+
+
+.reference-thumb {
+  display:block;
+  width:476px;
+  height:249px;
+}
+
+.reference-content {
+  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, .1);
+  border-top: 0;
+  padding: 10px 12px 10px 12px;
+}
+
+.reference:hover .reference-content {
+  border-color: black; /* Fallback */
+  border-color: rgba(0, 0, 0, .15);
+}
+
+.reference-title {
+  font-family: Georgia;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  
+  margin-bottom:5px;
+}
+
+.reference-subtitle {
+  font-family: Helvetica;
+  font-size:12px;
+  line-height: 16px; 
+}
+
+.reference-font {
+  color: #90949c;
+  font-family: Helvetica;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+
+  padding-top:9px; 
+}
+
+.social {
+  margin-top:12px;
+}
+.social-buttons {
+  color: #7f7f7f;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight:bold;
+  line-height:14px;
+  
+  border-top:1px solid #e5e5e5;
+  padding-top:4px;
+  
+}
+
+.social-buttons span {
+  font-size: 12px;
+  margin-right:20px;
+  padding:4px 4px 4px 0;
+}
+
+.social-buttons span:hover {
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.social-buttons span i {
+  padding-right:4px;
+}
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-dark navbar-expand-md navigation-clean" style="background-color: #4267b2">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+
+
+            <input type="text" name="search" class="form-control col-md-4" placeholder="Search">
+
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><img src="https://scontent.fzgh1-1.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/118588694_3709746765711654_172948469857999287_n.jpg?_nc_cat=103&amp;_nc_sid=dbb9e7&amp;_nc_ohc=zdMo9waoelAAX92Vjxd&amp;_nc_ht=scontent.fzgh1-1.fna&amp;_nc_tp=27&amp;oh=59ce5e89731e1eda18e1068f9e1fb73b&amp;oe=5F8EA21E" class="img-responsive avatar"> User </a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    </li>
+                    
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Find Friends</a></li>
+                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Create</a></li> 
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fas fa-user-friends"></i></a></li>
+                     <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                    
+                     <li class="nav-item dropdown"><a class=" nav-link" data-toggle="dropdown" aria-expanded="false" href="#"> <i class="fas fa-bell"></i><span class="badge badge-info">9</span>
+</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"> </a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper" class="container">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fab fa-facebook-square"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Blue Theme</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+ 
+       <div class="row">
+            <div class="col-md-9 pt-4 pl-4">
+             <h4 class="m-2">create post</h4>
+<textarea class="form-control" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</textarea>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+             <h4 class="m-2">stories</h4>
+
+<div class="story owl-carousel owl-theme">
+  <div class="story-item item" style="background-image:url(https://4.img-dpreview.com/files/p/E~TS590x0~articles/3925134721/0266554465.jpeg);"> 
+    <div class="rounded"></div>
+    <span>Your Content<span></div>
+  <div class="story-item item" style="background-image:url(https://cdn.pixabay.com/photo/2015/06/19/17/58/sample-815141_960_720.jpg);" >  
+    <div class="rounded"></div>
+    <span>Your Content<span></div>
+  <div class="story-item item" style="background-image:url(https://petapixel.com/assets/uploads/2012/02/sample1_mini.jpg);"> 
+     <div class="rounded"></div>
+    <span>Your Content<span> </div>
+  <div class="story-item item" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR1uJ2UBA9SkxbosVbEjCTYo5FIBlVas-niv68Gfr3bam_EU_P);"> 
+     <div class="rounded"></div>
+    <span>Your Content<span> </div>
+  <div class="story-item item" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMIHqfMzKRiZed4BUNOKpPpTYLrDxC3hsiICottRQnNXHFaU3UA);" > 
+     <div class="rounded"></div>
+    <span>Your Content<span> </div>
+  <div class="story-item item" style="background-image:url(https://imaging.nikon.com/lineup/lens/f-mount/singlefocal/normal/af-s_50mmf_18g/img/sample/sample1_l.jpg);"> 
+     <div class="rounded"></div>
+    <span>Your Content<span> </div>
+  <div class="story-item item" style="background-image:url(https://dsim.in/blog/wp-content/uploads/2018/09/Image-3-e1537274947337.jpg);">  
+    <div class="rounded"></div>
+    <span>Your Content<span> </div>
+</div>
+
+
+
+
+
+
+
+<article>
+  
+    <div class="options"><i class="fa fa-chevron-down"></i></div>
+    <img class="co-logo" src="http://placehold.it/40x40" />
+    <div class="co-name"><a href="#">PureCSS</a></div>
+    <div class="time"><a href="#">2hrs</a> · <i class="fa fa-globe"></i></div>
+
+  <div class="content text-justify">
+    <p>Height is optional, if no height is specified the image will be a square.ExampleHeight is optional, if no height is specified the image will be a square.Example: http://placehold.it/300 See More
+
+: <a href="http://placehold.it/300">http://placehold.it/300</a> See More</p>
+  </div>
+
+
+    <img class="img-fluid" src="http://placehold.it/1976x449" />
+    <div class="reference-content">
+      <div class="reference-title">A quick and simple image placeholder service. | PLACEHOLDER.it</div>
+      <div class="reference-subtitle">How does it work? Just put your image size after our URL and you'll get a placeholder.</div>
+      <div class="reference-font">placeholder.it</div>
+    </div>
+
+  <div class="social">
+    <div class="social-content"></div>
+    <div class="social-buttons">
+      <span><i class="fa fa-thumbs-up"></i>Like</span>
+      <span><i class="fa fa-comment"></i>Comment</span>
+      <span><i class="fa fa-share"></i>Share</span></div>
+  </div>
+</article>
+<article>
+  
+    <div class="options"><i class="fa fa-chevron-down"></i></div>
+    <img class="co-logo" src="http://placehold.it/40x40" />
+    <div class="co-name"><a href="#">PureCSS</a></div>
+    <div class="time"><a href="#">2hrs</a> · <i class="fa fa-globe"></i></div>
+
+  <div class="content text-justify">
+    <p>Height is optional, if no height is specified the image will be a square.ExampleHeight is optional, if no height is specified the image will be a square.Example: http://placehold.it/300 See More
+
+: <a href="http://placehold.it/300">http://placehold.it/300</a> See More</p>
+  </div>
+
+
+    <img class="img-fluid" src="http://placehold.it/1976x449" />
+    <div class="reference-content">
+      <div class="reference-title">A quick and simple image placeholder service. | PLACEHOLDER.it</div>
+      <div class="reference-subtitle">How does it work? Just put your image size after our URL and you'll get a placeholder.</div>
+      <div class="reference-font">placeholder.it</div>
+    </div>
+
+  <div class="social">
+    <div class="social-content"></div>
+    <div class="social-buttons">
+      <span><i class="fa fa-thumbs-up"></i>Like</span>
+      <span><i class="fa fa-comment"></i>Comment</span>
+      <span><i class="fa fa-share"></i>Share</span></div>
+  </div>
+</article>
+<article>
+  
+    <div class="options"><i class="fa fa-chevron-down"></i></div>
+    <img class="co-logo" src="http://placehold.it/40x40" />
+    <div class="co-name"><a href="#">PureCSS</a></div>
+    <div class="time"><a href="#">2hrs</a> · <i class="fa fa-globe"></i></div>
+
+  <div class="content text-justify">
+    <p>Height is optional, if no height is specified the image will be a square.ExampleHeight is optional, if no height is specified the image will be a square.Example: http://placehold.it/300 See More
+
+: <a href="http://placehold.it/300">http://placehold.it/300</a> See More</p>
+  </div>
+
+
+    <img class="img-fluid" src="http://placehold.it/1976x449" />
+    <div class="reference-content">
+      <div class="reference-title">A quick and simple image placeholder service. | PLACEHOLDER.it</div>
+      <div class="reference-subtitle">How does it work? Just put your image size after our URL and you'll get a placeholder.</div>
+      <div class="reference-font">placeholder.it</div>
+    </div>
+
+  <div class="social">
+    <div class="social-content"></div>
+    <div class="social-buttons">
+      <span><i class="fa fa-thumbs-up"></i>Like</span>
+      <span><i class="fa fa-comment"></i>Comment</span>
+      <span><i class="fa fa-share"></i>Share</span></div>
+  </div>
+</article>
+<article>
+  
+    <div class="options"><i class="fa fa-chevron-down"></i></div>
+    <img class="co-logo" src="http://placehold.it/40x40" />
+    <div class="co-name"><a href="#">PureCSS</a></div>
+    <div class="time"><a href="#">2hrs</a> · <i class="fa fa-globe"></i></div>
+
+  <div class="content text-justify">
+    <p>Height is optional, if no height is specified the image will be a square.ExampleHeight is optional, if no height is specified the image will be a square.Example: http://placehold.it/300 See More
+
+: <a href="http://placehold.it/300">http://placehold.it/300</a> See More</p>
+  </div>
+
+
+    <img class="img-fluid" src="http://placehold.it/1976x449" />
+    <div class="reference-content">
+      <div class="reference-title">A quick and simple image placeholder service. | PLACEHOLDER.it</div>
+      <div class="reference-subtitle">How does it work? Just put your image size after our URL and you'll get a placeholder.</div>
+      <div class="reference-font">placeholder.it</div>
+    </div>
+
+  <div class="social">
+    <div class="social-content"></div>
+    <div class="social-buttons">
+      <span><i class="fa fa-thumbs-up"></i>Like</span>
+      <span><i class="fa fa-comment"></i>Comment</span>
+      <span><i class="fa fa-share"></i>Share</span></div>
+  </div>
+</article>
+
+
+
+            </div>
+            <div class="col-md-3 pt-4 pl-4">
+<div class="dropdown">
+  <button class="btn btn-info dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Your page
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+
+
+
+
+    <div class="profile-sidebar">
+                <!-- SIDEBAR USERPIC -->
+                <div class="profile-userpic text-center">
+                    <img src="https://scontent.fzgh1-1.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/118588694_3709746765711654_172948469857999287_n.jpg?_nc_cat=103&_nc_sid=dbb9e7&_nc_ohc=zdMo9waoelAAX92Vjxd&_nc_ht=scontent.fzgh1-1.fna&_nc_tp=27&oh=59ce5e89731e1eda18e1068f9e1fb73b&oe=5F8EA21E" class="img-responsive" alt="">
+                </div>
+                <!-- END SIDEBAR USERPIC -->
+                <!-- SIDEBAR USER TITLE -->
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        Marcus Doe
+                    </div>
+                    <div class="profile-usertitle-job">
+                        Developer
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+                <!-- SIDEBAR BUTTONS -->
+                <div class="profile-userbuttons">
+                    <button type="button" class="btn btn-success btn-sm">Follow</button>
+                    <button type="button" class="btn btn-danger btn-sm">Message</button>
+                </div>
+                <!-- END SIDEBAR BUTTONS -->
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Overview </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class="glyphicon glyphicon-user"></i>
+                            Account Settings </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                            <i class="glyphicon glyphicon-ok"></i>
+                            Tasks </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <i class="glyphicon glyphicon-flag"></i>
+                            Help </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END MENU -->
+            </div>
+
+
+
+<div id="pagelet_rhc_footer" data-referrer="pagelet_rhc_footer" data-veid="vc_10"><div class="_45mq"><div class="uiContextualLayerParent"><div class="_4-u2 _19ah _2ph_ _4-u8"><div class="_5aj7"><div class="_4bl9"><div class="fsm fwn fcg"><span lang="en">English (US)</span><span role="presentation" aria-hidden="true"> · </span><a dir="rtl" href="/intl/save_locale/dialog/?loc=fa_IR&amp;href=https%3A%2F%2Fwww.facebook.com%2F&amp;ls_ref=www_card_selector" lang="fa" rel="dialog" title="Persian" class="_5f4c" role="button">فارسی</a><span role="presentation" aria-hidden="true"> · </span><a dir="ltr" href="/intl/save_locale/dialog/?loc=da_DK&amp;href=https%3A%2F%2Fwww.facebook.com%2F&amp;ls_ref=www_card_selector" lang="da" rel="dialog" title="Danish" class="_5f4c" role="button">Dansk</a><span role="presentation" aria-hidden="true"> · </span><a dir="ltr" href="/intl/save_locale/dialog/?loc=pl_PL&amp;href=https%3A%2F%2Fwww.facebook.com%2F&amp;ls_ref=www_card_selector" lang="pl" rel="dialog" title="Polish" class="_5f4c" role="button">Polski</a><span role="presentation" aria-hidden="true"> · </span><a dir="ltr" href="/intl/save_locale/dialog/?loc=es_LA&amp;href=https%3A%2F%2Fwww.facebook.com%2F&amp;ls_ref=www_card_selector" rel="dialog" title="Spanish" class="_5f4c" role="button">Español</a></div></div><div class="_4bl7 _2pit"><a role="button" class="_42ft _4jy0 _4jy4 _517h _51sy" ajaxify="/settings/language/language/?uri=https%3A%2F%2Fwww.facebook.com%2F&amp;source=www_card_selector_more" rel="dialog" href="#" aria-label="Use Facebook in another language."><i class="img sp_8TNJhCppFOs sx_bd91b1"></i></a></div></div></div></div><div aria-label="Facebook" class="_26z1" role="contentinfo" id="js_8"><div class="fsm fwn fcg"><a href="https://www.facebook.com/privacy/explanation" title="Learn about your privacy and Facebook.">Privacy</a><span role="presentation" aria-hidden="true"> · </span><a accesskey="9" href="https://www.facebook.com/policies?ref=pf" title="Review our terms and policies.">Terms</a><span role="presentation" aria-hidden="true"> · </span><a href="https://www.facebook.com/ad_campaign/landing.php?placement=pf_rhc&amp;campaign_id=242449722530626&amp;extra_1=auto" title="Advertise on Facebook.">Advertising</a><span role="presentation" aria-hidden="true"> · </span><a class="_41uf" href="https://www.facebook.com/help/568137493302217" title="Learn about Ad Choices.">Ad Choices<i class="img sp_8TNJhCppFOs sx_fe7063"></i></a><span role="presentation" aria-hidden="true"> · </span><a href="https://www.facebook.com/help/cookies?ref_type=sitefooter" title="Cookies">Cookies</a><span role="presentation" aria-hidden="true"> · </span><div class="_6a uiPopover" id="u_0_1t"><a class="_45mr _p" aria-haspopup="true" aria-expanded="false" rel="toggle" href="#" role="button" id="u_0_1u">More<i class="img sp_8TNJhCppFOs sx_c9f113"></i></a></div></div><div><span> Facebook © 2020</span></div></div></div></div>
+            </div>
+       </div>
+          
+        </div>
+    </div>
+    <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Copyright © Brand 2020</span></div>
+        </div>
+    </footer>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script  src="./script.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+  $('.story').owlCarousel({
+    center: false,
+    items:3,
+    loop:true,
+    margin:5,
+     stagePadding: 15,
+   
+});
+});
+
+
+    </script>
+</body>
+
+</html>
